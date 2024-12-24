@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #box{
+        background-color: #FAF5FF;
+        padding: 20px;
+        border-radius: 10px;
+        width: 700px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    input{
+        width: 60%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+    button{
+        font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid #a855f7;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #a855f7;
+    }button:hover{
+        background-color: #9333EA;
+        color: #ffffff;
+        scale: 1.05;
+    }
+    textarea{
+        width: 60%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }	
+    @media screen and (max-width: 768px){
+        #box{
+            width: 300px;
+            height: 300px;
+        }
+        input,textarea{
+            width: 90%;
+        }
+        
+    }
+</style>
+<body>
+              <div id="main">
+                <div id="box">
+                    <h1>Contact Me</h1>
+                    <input type="text" name="" id="name" placeholder="Enter Your Name">
+                    <input type="text" name="" id="name" placeholder="Enter Your Number">
+                    <textarea name="" placeholder="Write your message" id=""></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+              </div>
+</body>
+</html>
